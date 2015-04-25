@@ -14,5 +14,11 @@ namespace UnitTestProject1
             Assert.AreEqual("山田", employee.Name);
             Assert.AreEqual(100, employee.BaseSalary);
         }
+        [TestMethod]
+        public void TestCalcSalary()
+        {
+            Employee employee = new Employee(2, "田中", 100);
+            Assert.AreEqual(201, employee.Salary());
+        }
     }
 }

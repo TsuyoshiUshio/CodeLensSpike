@@ -15,5 +15,10 @@
         public string Name { get; set; }
 
         public int BaseSalary { get; set; }
+
+        public int Salary()
+        {
+            return BaseSalary * 2 + 1;
+        }
     }
 }
