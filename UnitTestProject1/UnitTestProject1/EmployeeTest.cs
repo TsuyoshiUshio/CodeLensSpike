@@ -20,5 +20,12 @@ namespace UnitTestProject1
             Employee employee = new Employee(2, "田中", 100);
             Assert.AreEqual(201, employee.Salary());
         }
+
+        [TestMethod]
+        public void TestPoliteExpression()
+        {
+            Employee employee = new Employee(3, "砂金", 100);
+            Assert.AreEqual("砂金さん", employee.PoliteName());
+        }
     }
 }

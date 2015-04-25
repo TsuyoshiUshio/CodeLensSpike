@@ -1,4 +1,6 @@
-﻿namespace UnitTestProject1
+﻿using System;
+
+namespace UnitTestProject1
 {
     public class Employee
     {
@@ -19,6 +21,11 @@
         public int Salary()
         {
             return BaseSalary * 2 + 1;
+        }
+
+        public string PoliteName()
+        {
+            return Name + "さん";
         }
     }
 }
